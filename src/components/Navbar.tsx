@@ -14,18 +14,18 @@ export default function Navbar() {
             <div className="max-w-5xl mx-auto flex items-center justify-between p-4">
                 <div className="text-xl font-bold">Clara Leconte Coaching</div>
                 <ul className="flex space-x-6">
-                {navItems.map((item) => (
-                    <li key={item.to}>
-                        <Link
-                            to={item.to}
-                            smooth
-                            duration={500}
-                            offset={-80}
-                            className="cursor-pointer hover:text-yellow-500"
->
-                            {item.label}
-                        </Link>
-                    </li>
+                    {navItems.map((item) => (
+                        <li key={item.to}>
+                            <Link
+                                to={item.to}
+                                smooth
+                                duration={500}
+                                offset={-80}
+                                className="cursor-pointer hover:text-yellow-500"
+                                >
+                                {item.label}
+                            </Link>
+                        </li>
                     ))}
                 </ul>
             </div>
