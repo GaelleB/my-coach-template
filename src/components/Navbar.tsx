@@ -18,14 +18,15 @@ export default function Navbar() {
                     <li key={item.to}>
                         <Link
                             to={item.to}
-                            smooth={true}
+                            smooth
                             duration={500}
+                            offset={-80}
                             className="cursor-pointer hover:text-yellow-500"
-                        >
+>
                             {item.label}
                         </Link>
                     </li>
-                ))}
+                    ))}
                 </ul>
             </div>
         </nav>
